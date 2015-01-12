@@ -1,0 +1,4 @@
+<project name="HelloWorld" basedir=".">
+	<javac srcdir=".">
+	</javac>
+</project>
