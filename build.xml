@@ -1,4 +1,6 @@
 <project name="HelloWorld" basedir=".">
-	<javac srcdir=".">
-	</javac>
+	<target name="compile" >	
+		<javac srcdir=".">
+		</javac>
+	</target>
 </project>
