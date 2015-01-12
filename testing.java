@@ -1,5 +1,5 @@
 
-class Hello {
+class Main {
 	public static void main(String[] args) {
 		Extras stuff = new Extras();
 		int number = stuff.added();
