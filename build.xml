@@ -1,6 +1,21 @@
 <project name="HelloWorld" basedir=".">
-	<target name="compile" >	
+	<target name="clean">
+		<delete >
+			<fileset dir="." includes="**/*.class" />
+		</delete>
+	</target>
+
+	<target name="compile" depends="clean">	
 		<javac srcdir=".">
 		</javac>
+	</target>
+
+	<target name="assemble" depends="compile">
+		<mkdir dir="bin" />
+		<move todir="bin" >
+			<fileset dir="." >
+				<include name="**/*.class" />
+			</fileset>
+		</move>
 	</target>
 </project>
